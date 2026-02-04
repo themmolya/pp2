@@ -1,5 +1,6 @@
 ### Repository Structure
-Practice2/
+
+```Practice2/
 ├── boolean/
 │ ├── boolean_intro.py
 │ ├── boolean_comparison.py
@@ -19,4 +20,4 @@ Practice2/
 │ ├── for_break.py
 │ └── for_continue.py
 │
-└── README.md
+└── README.md```
