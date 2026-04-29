@@ -9,3 +9,15 @@ BEGIN
     END IF;
 END;
 $$;
+CREATE OR REPLACE PROCEDURE insert_many(names TEXT[], phones TEXT[])
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    i INT;
+BEGIN
+    FOR i IN 1..array_length(names, 1) LOOP
+        INSERT INTO contacts(name, phone)
+        VALUES (names[i], phones[i]);
+    END LOOP;
+END;
+$$;
